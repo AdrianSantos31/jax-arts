@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>JaxArt</title>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Icon-->
+    <link rel="icon" href="media/jaxart.jpeg">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+  </head>
+
+
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">JaxArt</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="places/places.html">Public Art Map</a></li>
+            <li><a href="gallery/gallery.html">Gallery</a></li>
+            <!--<li><a href="#">Page 3</a></li>  -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Body-->
+    <div class="container">
+      <h1 id="mainQuestion"> Why should the arts in Jacksonville be funded?</h1>
+      <h3> Step 1: Upload the picture</h3>
+      <div class="form-group">
+        <label>Upload Image</label>
+        <div class="input-group">
+          <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse <input type="file" id="imgInp">
+                </span>
+          </span>
+          <input type="text" class="form-control" readonly>
+        </div>
+        <img id='img-upload' />
+        <h3> Step 2: Give Picture Details </h3>
+        <label class="control-label" for="date">Date</label>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
+        <label for="artName">Art Name:</label>
+        <input type="text" class="form-control" id="artName">
+        <label for="loc">Location:</label>
+        <input type="text" class="form-control" id="loc">
+        <label for="area">Area:</label>
+        <select class="form-control" id="area">
+            <option>Select Area</option>
+            <option>Downtown</option>
+            <option>Beaches</option>
+            <option>Northside</option>
+            <option>Westside</option>
+            <option>Southside</option>
+            <option>Mandarin</option>
+            <option>St. Augustine</option>
+          </select>
+
+        <label for="points">Expected Points:</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio">1 (Known art locations)</label>
+        <label class="radio-inline"><input type="radio" name="optradio">2 (Unknown art locations)</label>
+        <br>
+        <label for="upby">Uploaded by:</label>
+        <select class="form-control" id="upby">
+            <option>Select Team Member</option>
+            <option>Lidijia</option>
+            <option>Marissa</option>
+            <option>Veronika</option>
+            <option>Kjelsie</option>
+            <option>Zane</option>
+            <option>Tiffany</option>
+            <option>Grant</option>
+            <option>Chayne</option>
+            <option>Adrian</option>
+            <option>Stevin</option>
+          </select>
+          <h3> Step 3: Press Submit </h3>
+          <input type="submit" class="btn btn-primary btn-large btn-block">
+          <!-- <button type="button" class="btn btn-primary btn-large btn-block">Submit</button> -->
+      </div>
+      <!-- <h3> Step 2: Give Picture Details </h3>
+
+      <div class="form-group">
+        <label class="control-label" for="date">Date</label>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+        <label for="artName">Art Name:</label>
+        <input type="text" class="form-control" id="artName">
+
+        <label for="loc">Location:</label>
+        <input type="text" class="form-control" id="loc">
+
+        <label for="points">Expected Points:</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio">1 (Known art locations)</label>
+        <label class="radio-inline"><input type="radio" name="optradio">2 (Unknown art locations)</label>
+        <br>
+        <label for="upby">Uploaded by:</label>
+        <select class="form-control" id="upby">
+            <option>Select Team Member</option>
+            <option>Lidijia</option>
+            <option>Marissa</option>
+            <option>Veronika</option>
+            <option>Kjelsie</option>
+            <option>Zane</option>
+            <option>Tiffany</option>
+            <option>Grant</option>
+            <option>Chayne</option>
+            <option>Adrian</option>
+            <option>Stevin</option>
+          </select>
+      </div>
+      <h3> Step 3: Press Submit </h3>
+      <button type="button" class="btn btn-primary btn-large btn-block">Submit</button> -->
+    </div>
+  </body>
+  <!--Custom JS-->
+  <script src="js/datepick.js"></script>
+  <script src="js/imgup.js"></script>
+
+
+</html>
+
+
+</html>
