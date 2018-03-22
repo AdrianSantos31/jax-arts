@@ -1,7 +1,7 @@
 <?php
 
   $serverName = "localhost";//This is true
-  $use = "adrianco_adrian";//Supposed to be user
+  $use = "myUserName";//Supposed to be user
   $password = "SECRET";
   $dbName = "SUUUP";
 
